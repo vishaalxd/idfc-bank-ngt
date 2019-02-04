@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IDFC Bank</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!--Header-->
+    <header>
+        <nav>
+            <div class="list">
+                <div class="hamburger"></div>
+                <label>MENU</label>
+            </div>
+        </nav>
+        <figure>
+            <img id="h-icon1" src="images/idfc-bank-logo.jpg" alt="logo" />
+        </figure>
+        <div class="login">
+            <img id="h-icon2" src="images/lock.png" />
+            <button class="login-button">LOGIN</button>
+        </div>
+    </header>
+
+
+    <!--carousal-->
+    <div class="carousal-container">
+        <section class="carousal">
+            <h3>Personal Loan</h3>
+            <p>For all your needs big and small, we help you fulfill them and get much more</p>
+            <div class="c-panel">
+                <div class="c-items">
+                    <div class="c-item">
+                        <figure><img class="c-image" src="images/pl-prelogin-gif-savings.png" alt="img" /></figure>
+                        <h3>Savings</h3>
+                        <p>Save more on your interest</p>
+                        <span>SEE MORE</span>
+                    </div>
+                </div>
+                <div class="loanb c-items hidden ">
+                    <div class="ch-item">
+                        <figure><img class="ch-image" src="images/pl-prelogin-gif-flexibility.png" alt="img" /></figure>
+                        <h3>Flexibility</h3>
+                        <section class="tab">
+                            <section class="tab-1">
+                                <div><p class="t-month">3 months
+                                    Tenure Option</p>
+                                    <div class="line"></div>
+                                <p class="t-period">With tenure period as less
+                                    as 3 months</p></div>
+                            </section>
+                            <section class="tab-2">
+                            <div><p class="t-month">Flexible
+                                    EMI & Tenure</p>
+                                    <div class="line"></div>
+                                <p class="t-period">With tenure period as less
+                                    as 3 months</p></div>
+                            </section>
+                        </section>
+                        <span onclick="loanHandler(2)">SEE MORE</span>
+                    </div>
+                </div>
+                <div class="loanf c-items" >
+                    <div class="c-item">
+                        <figure><img class="c-image" src="images/pl-prelogin-gif-flexibility.png" alt="img" /></figure>
+                        <h3>Flexibility</h3>
+                        <p>Payback on your own terms</p>
+                        <span onclick="loanHandler(1)">SEE MORE</span>
+                    </div>
+                </div>  
+                <div class="c-items">
+                    <div class="c-item">
+                        <figure><img class="c-image" src="images/group-2.png" alt="img" /></figure>
+                        <h3>Convenience</h3>
+                        <p>Manage your loans with ease</p>
+                        <span>SEE MORE</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!--Tell us About Section-->
+    <section class="tells-us-container">
+        <h3>Tell us about you and see how you can benefit</h3>
+        <div class="tu-body">
+            I need a personal loan of <img class="currency" src="images/fill-1.svg" alt="Rs" /><input class="blanks" />
+            <br>I am working at <input class="blanks" /> and <br>make <img class="currency" src="images/fill-1.svg" alt="Rs" /><input
+                class="blanks" /> per month.
+        </div>
+        <div class="use-card">
+            <aside>
+                <input type="checkbox" id="checkbox" onclick="credithandle()"/><span class="checkmark"></span>
+                I use credit card
+            </aside>
+            <section class="ccard-checked hidden">
+                <div class="tu-body ccard">
+                    My average credit card expense <br> is <img class="currency" src="images/fill-1.svg" alt="Rs" /><input
+                        class="blanks" />
+                    monthly
+                </div>
+            </section>
+        </div>
+
+        <!--Credit Card Checked-->
+        <section class="ccard-checked hidden">
+            <div class="use-card">
+                <div class="tu-body ccard">
+                    I pay a total monthly EMI of <br><img class="currency" src="images/fill-1.svg" alt="Rs" /><input
+                        class="blanks" />
+                    &nbsp;<img class="currency" src="images/fill-1.svg" alt="Rs" /><input class="blanks" />
+                    <section>
+                        <p>For any personal loan<br>
+                            (Unsecure loan)</p>
+                        <p>For any home loan or <br>
+                            loan against property (Secure loan)</p>
+                    </section>
+                </div>
+            </div>
+            <button class="red-button">Show me my solution</button>
+        </section>
+
+
+        <div class="emi">
+            <figure><img class="add-icon" src="images/group-7.png" /></figure>
+            <p>Add your existing EMI if any</p>
+        </div>
+    </section>
+
+
+    <!--Footer-->
+    <footer>
+        <section class="f-section border-pink">
+            <p>2015 IDFC</p>
+            <p>All Rights Reserved</p>
+            <div class="branch">
+                <p><b>IDFC Bank</b>, NZE</p>
+                <p>312.65</p>
+                <p>22 Jul 11:11:11</p>
+            </div>
+        </section>
+        <section class=" f-section border-yellow">
+            <p><b>COMPANY</b></p>
+            <br />
+            <p>About</p>
+            <p>Careers</p>
+            <p>Investor Relations</p>
+            <p>group companies</p>
+            <p>CSR Activities</p>
+            <p>Notice Board</p>
+        </section>
+        <section class=" f-section border-pink">
+            <p><b>EXPLORE</b></p>
+            <br />
+            <p>Safe Banking</p>
+            <p>Initiatives</p>
+            <p>Rates & Charges</p>
+            <p>Terms & Conditions</p>
+            <p>Tools & Calculations</p>
+            <p>Form Centre</p>
+        </section>
+        <section class=" f-section border-pink">
+            <p>Safe Banking</p>
+            <p>Initiatives</p>
+            <p>Rates & Charges</p>
+            <p>Terms & Conditions</p>
+            <p>Tools & Calculations</p>
+            <p>Form Centre</p>
+        </section>
+        <section class=" f-section border-yellow">
+            <p><b>CONNECT</b></p>
+            <br />
+            <p>Contact Us</p>
+            <p>Customer Care</p>
+        </section>
+    </footer>
+
+    <script src="js/script.js" async defer></script>
+</body>
+
+</html>
