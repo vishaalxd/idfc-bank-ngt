@@ -1,7 +1,7 @@
 body{
   margin: 0 auto;
   padding: 0px;
-  font-family: 'Gotham Bold',sans-serif;
+  font-family: 'Gotham Book',sans-serif;
   color:#4a4a4a;
 }
 
@@ -21,8 +21,8 @@ header {
    margin-left: 10px;
    padding: 0;
    font-size: 12px;
-   font-weight: 900;
-   letter-spacing: 0.2px;
+   font-family: 'Gotham Bold',sans-serif;
+   letter-spacing: 0.3px;
    border-style: none;
    background: rgba(0,0,0,0);
   }
@@ -30,7 +30,7 @@ header {
 
   .list{
     position: relative;
-    padding-left: 28px;
+    padding-left: 25px;
     display: flex;
     align-items: center;
     flex:2;
@@ -76,16 +76,33 @@ header {
     flex:4;
   }
 
-  .list label {
+  .list #menu {
     width: 37px;
     height: 15px;
     font-size: 12px;
     font-weight: 900;
     font-style: normal;
-    font-stretch: normal;
-    line-height: 1.08;
-    letter-spacing: normal;
+    font-family: 'Gotham Bold',sans-serif;
     color: #333333;
+  }
+
+  .search{
+    right:0;
+    position: absolute;
+    text-align: right;
+    background: none;
+  background-color: #f9f7ef;
+  }
+
+  ::placeholder{
+    padding:10px;
+    font-size: 20px;
+  }
+
+  .search .s-img{
+    height: 50px;
+    width: 50px;
+    
   }
 
   #h-icon2{
@@ -94,7 +111,7 @@ header {
     justify-content: center;
   }
 
-  header figure{
+  .h-img{
     flex:6;
     margin: 0 auto;
     text-align: center;
@@ -103,12 +120,12 @@ header {
   .carousal-container{
     width:100%;
     margin: 0px;
-    width: 100%;
-  height: 512px;
+    padding-bottom: 50px;ed
+  height: auto;
   background-color: #f9f7ef;
   }
 
-  .carousal h3{
+  .carousal .cc-title{
     margin: 0 auto;
     padding-top:55px;
     font-size: 30px;
@@ -118,7 +135,8 @@ header {
   color: #c98bdb;
   }
 
-  .carousal p{
+  .carousal .para{
+    font-family: 'Gotham Book',sans-serif;
     text-align: center;
     margin:0 auto;
     padding-top:10px;
@@ -131,16 +149,67 @@ header {
     padding-top:30px; 
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 600px) and (min-width:400px) {
+   .c-panel{
+     padding: 0;
+   }
+
+   .list{
+    flex:1;
+   }
+
+   #menu{
+     display: none;
+   }
+
+   .carousal .para{
+     padding: 20px;
+     font-size: 16px;
+   }
+
+   .c-items{
+    border-right:1px solid #e1e1e1;
+    border-top: 1px solid #e1e1e1;
+    border-left: 1px solid #e1e1e1;
+   }
+
+   .carousal-container{
+     padding-bottom: 40px;
+   }
+
+   .tu-body{
+     padding: 0px !important;
+     font-size: 24px !important;
+   }
+   .use-card{
+    margin-left:10px !important;
+    margin-right: 10px !important;
+   }
+   h3{
+     font-size: 16px;
+     padding: 10px 20px;
+   }
 
   }
+
 
   .carousal .c-items{
     width:270px;
     height:280px;
-    border:1px solid #e1e1e1;
+    border-bottom:1px solid #e1e1e1;
+    border-top: 1px solid #e1e1e1;
+    border-left: 1px solid #e1e1e1;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .c-border{
+    border-right:1px solid #e1e1e1;
   }
 
   .carousal .c-image{
@@ -166,17 +235,18 @@ header {
     visibility: hidden;
   }
 
-  .c-item h3{
+  .c-item .head{
   font-size: 22px;
   color:#4a4a4a;
   }
 
-  .c-item p{
+  .c-item .para{
+    font-family: 'Gotham Book',sans-serif;
     padding-top:10px; 
     font-size: 14px;
   }
 
-  .c-item span{
+  .c-item  .see-more{
   padding-top: 24px;
   font-weight: 600;
   font-size: 10px;
@@ -184,18 +254,22 @@ header {
   color: #fb637e;
   }
 
-  .ch-item span{
-    padding-top: 24px;
+
+  .ch-item .see-more{
+    margin-top:4px;
+    padding: 20px 0px;
     font-weight: 600;
     font-size: 10px;
     text-align: center;
     color: #fb637e;
   }
   .ch-item{
+    padding-top: 8px;
     display: flex;
     flex-direction: column;
   }
 
+ 
   .c-item figure{
     margin: 0 auto;
     height:110px;
@@ -212,20 +286,27 @@ header {
     justify-content: center;
   }
 
-  .ch-item h3{
+  .ch-item .head{
     font-size: 22px;
   color:#4a4a4a;
     padding-top:10px;
+    margin: 0;
     padding-bottom: 12.5px;
   }
 
   .tells-us-container{
-  padding-top: 50px;
+  
   background-color: #fcdf8e;
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding-bottom:90px;
+  }
+
+  .humps{
+    background-color: #fcdf8e;
+    height:10px;
+    padding-bottom: 50px;
   }
 
    h3{
@@ -237,9 +318,9 @@ header {
   }
 
   .tu-body{
+   font-family: 'Gotham Book',sans-serif;
     text-align: center;
     font-size: 30px;
-    max-width:42%;
     line-height: 54px;
     margin: 0 auto;
     padding-left: 50px;
@@ -251,33 +332,40 @@ header {
     border-style: none;
     background: none;
     width:180px;
+    font-size: 28px;
+    outline: none;
+    padding-left: 10px;
+    font-family: 'Gotham Book';
     border-bottom: 4px dotted #fb637e;
   }
 
   .use-card{
     margin: 0 auto;
-    width:808px;
+    max-width:808px;
     text-align: center;
     font-size: 16px;
     padding: 20px;
     border-top: 1px solid rgba(74, 74, 74, 0.1);
-    border-bottom: 1px solid rgba(74, 74, 74, 0.1);
+    /* border-bottom: 1px solid rgba(74, 74, 74, 0.1); */
     line-height: 24px;
    
   }
 
-  .use-card aside input {
+  .use-card #checkbox {
     width: 23.8px;
   height: 32px;
   object-fit: contain;
   border-radius: 4px;
+  
   background-color: #ffffff;
   }
   
-  .use-card aside{
+  .use-card .cc-aside{
     margin: 0 auto;
-    max-width: 40%;
+    width: 100%;
     display: flex;
+    font-family: 'Gotham Book',sans-serif;
+    font-weight: 600;
     justify-content: center;
     align-items: center;
     font-size: 16px;
@@ -297,13 +385,14 @@ header {
 
   .ccard{
     margin: 0 auto;
-    max-width: 80%;
+    /* max-width: 80%; */
   }
 
-  .ccard section{
+  .ccard .sectn{
     padding-left: 80px;
+    display:flex;
   }
-  .ccard p {
+  .ccard .para {
     font-size: 14px;
   line-height: 1.43;
   display: inline-block;
@@ -311,7 +400,8 @@ header {
   text-align: left
   }
 
-  .emi p {
+  .emi .para {
+    font-family: 'Gotham Book',sans-serif;
     line-height: 47px;
     height: 47px;
     width:280px;
@@ -339,20 +429,25 @@ header {
     justify-content: center;
   }
 
+ 
+
 
   footer{
-    width:80%;
-    padding-top:60px;
+    flex-wrap: wrap;
+    max-width:80%;
+    padding-top:80px;
     display: flex;
     margin: 0 auto;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
     padding-bottom:80px; 
+    color :darkgray;
   }
   .f-section{
-    height: 125px;
+    height: auto;
     margin-left:10px;
     margin-right: 10px;
+    margin-bottom: 20px;
     margin-top:0px;
     flex: 1;
     padding :10px;
@@ -386,11 +481,11 @@ header {
   }
 
 
-  .tells-us-container:before,
-.tells-us-container:after {
+  .humps:before,
+.humps:after {
   content: "";
   position: absolute;
-  transform: translateY(-90px);
+  transform: translateY(2px);
   left: 0;
   right: 0;
   bottom: 25px; /*h/2*/
@@ -402,7 +497,7 @@ header {
   background-repeat: repeat-x;
 }
 
-.tells-us-container:after {
+.humps:after {
   background: radial-gradient(
     closest-side,
     transparent,
@@ -426,7 +521,8 @@ header {
   background-color: #fb637e;
   font-size: 17.5px;
   font-weight: 900;
-  line-height: 0.8;
+  font-family: 'Gotham Bold',sans-serif;
+  line-height: 50px;
   text-align: center;
   color: #ffffff;
   border-style:none;
@@ -472,6 +568,8 @@ header {
 .tab .t-period{
   font-size: 12px;
   line-height: 1.33;
+  font-family: 'Gotham Book',sans-serif;
+  font-weight: 600;
   text-align: center;
   color: #9b9b9b;
   padding-bottom: 10px;
@@ -485,61 +583,22 @@ header {
   background-color: #c98bdb;
 }
 
-/* 
-footer:before,
-footer:after {
-  content: "";
-  position: absolute;
-  transform: translateY(-40px);
-  left: 0;
-  right: 0;
-  bottom: 25px; 
-  height: 50px;
-  background: radial-gradient(closest-side, #ffffff, #fcdf8e, 50%, transparent 50%);
- 
-  background-size: 50px 50px; 
-  background-position: 0 25px; 
-  background-repeat: repeat-x;
+.hump {
+  width:100%;
+  height:34px;
+  background: #f9f7ef url('hump.png') top repeat-x;
 }
 
-footer:after {
-  background: radial-gradient(
-    closest-side,
-    transparent,
-    transparent 50%,
-    #fffefc 50%
-  );
-  background-size: 50px 50px;
-  background-position: 25px -25px;
-  background-repeat: repeat-x;
-  bottom: -25px;
-} */
 
-.use-card input:checked ~ .checkmark {
-  background-color: #2196F3;
+.hump-reverse {
+  width:100%;
+  height:36px;
+  background: #ffffff url('hump.png') bottom repeat-x;
+  transform: rotate(180deg);
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-/* Show the checkmark when checked */
-.use-card input:checked ~ .checkmark:after {
-  display: block;
-}
-
-/* Style the checkmark/indicator */
-.use-card .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+a{
+  text-decoration: none;
+  color: white;
+  
 }

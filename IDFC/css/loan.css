@@ -1,0 +1,450 @@
+
+.loan-container {
+  background-color: #f9f7ef;
+}
+
+
+
+.plan{
+  max-width: 100%;
+    height: 85px;
+    background-color: rgba(252, 223, 142, 0.3);
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .plan > *{
+    max-width:208px;
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    font-family: 'Gotham Book',sans-serif;
+   
+  }
+
+  .note {
+  height: 9px;
+  font-family: 'Gotham Book', sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  color: #ff8f1b;
+  padding-left: 13px;
+  }
+
+.loan-amt{
+  font-family: 'Gotham Book',sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+
+  color: #4a4a4a;
+  padding-bottom:7px;
+}
+
+.loan-req{
+  font-family: 'Gotham Book', sans-serif;
+  font-size: 13px;
+  color: #4a4a4a;
+  padding-bottom:7px;
+}
+
+.plan-column section{
+  border-left: 0.5px solid white;
+  border-right: 0.5px solid white;
+  padding-left: 13px;
+}
+
+.rupee{
+  padding-right: 6px;
+  height:14px;
+  width: auto;
+}
+
+
+
+.p-details{
+  display :flex;
+  flex-direction: column;
+  padding-top:25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-details .details-amt{
+  display :flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  padding: 15px 0px 15px 0px;
+  border-bottom: 2px solid #4a4a4a25;
+}
+
+.details-amt .d-title{
+  font-family: 'Gotham Light', sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+.details-amt .d-amt{
+  font-family: 'Gotham Book', sans-serif;
+  font-size: 35px;
+}
+
+.large{
+  height: 22px;
+  padding-right: 16px;
+}
+
+.monthly{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Gotham Light',sans-serif;
+  font-weight: 700;
+  /* padding-bottom: 10px; */
+  border-bottom:  2px solid #4a4a4a25;
+}
+
+.m-emi{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  padding-right: 20px; 
+ 
+}
+
+
+.m-tenure{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding-left: 20px;
+  border-left:  2px solid #4a4a4a25; 
+  transform: translateY(-1px);
+}
+
+.m-tenure .period{
+  margin: 0;
+  text-align: left;
+  font-family: 'Gotham Book',sans-serif;
+  font-weight: 800;
+  padding-bottom: 10px;
+}
+
+
+.interest-rate{
+  padding-top: 15px; 
+  font-family: 'Gotham Light',sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  color: #9b9b9b;
+  width:355px;
+  padding-bottom: 50px;
+}
+
+.recommendations{
+  padding-top:60px;
+  font-size: 22px;
+  color: #4a4a4a;
+  font-family: 'Gothan Light',sans-serif;
+  font-weight: 500;
+  padding-bottom: 40px;
+}
+
+.r-tabs .r-tab{
+  width: 310px;
+  /* height: 484px; */
+  border-radius: 2px;
+  background-color: #ffffff;
+  margin-left:20px;
+  margin-right: 20px;
+  
+
+}
+
+.loan-four{
+  width:90px;
+  height:90px;
+  background-size: cover;
+}
+
+
+.r-tab{
+display: flex;
+flex-direction: column;
+/* justify-content: center; */
+align-items: center;
+padding-top:44px;
+
+}
+
+.r-tab .r-body{
+  width: 210px;
+  height: 80px;
+  font-family: 'Gotham Book',sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+  color: #9b9b9b;
+}
+
+.r-tab .r-title{
+  font-family: 'Gotham Book',sans-serif;
+  font-size: 22px;
+}
+
+.r-lower{
+  width:100%;
+  border-top: 1px solid #4a4a4a25;
+  border-bottom:   1px solid #4a4a4a25;  
+}
+.r-tab .input {
+  
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.input .i-box{
+  border: 1px solid #c6cfd9;
+  border-radius: 3px;
+  width: 115px;
+  height:40px;
+  font-size: 32px;
+  font-family: 'Gotham Book';
+  /* padding-left:8px; */
+}
+
+.input .i-pay{
+  width: 115px;
+ 
+  font-family: 'Gotham Book', sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.25;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+.r-tabs{
+  margin: 0 auto;
+  width:80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 40px;
+  border-bottom:   1px solid #4a4a4a25;  
+}
+
+.input > *{
+  padding: 20px;
+}
+
+.annual-pay{
+  border-right:  1px solid #4a4a4a25; 
+}
+
+.see-how{
+  font-family: 'Gotham Book';
+  font-size: 10px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fb637e;
+  padding : 15px 0px;
+}
+
+.small{
+  height:40px;
+  width:160px;
+  font-size: 14px;
+  font-weight: 900;
+  margin-top:15px;
+  line-height: 40px;
+}
+
+.l-lower{
+  width:100%;
+  text-align: center;
+  border-top: 1px solid #4a4a4a25;
+}
+
+.md-emergency p{
+  display: inline-block;
+  width: 405px;
+  height: 18px;
+  font-family: 'Gotham Book',sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: #4a4a4a;
+  padding-bottom:20px; 
+}
+
+.md-emergency span{
+  color: #c98bdb;
+  font-weight: 600;
+}
+
+.md-emergency{
+  padding-top: 25px; 
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #4a4a4a25;
+}
+
+.md-emergency .icons{
+  width: 50px;
+  height:50px;
+  background-size: contain;
+}
+
+.md-emergency .e-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+.e-icons{
+  width:60%;
+  margin-left:10px;
+  margin-right: 10px;
+}
+
+.e-icons .e-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width:60px;
+  height:60px;
+  
+}
+
+li{
+  list-style: none;
+}
+
+.contact p {
+  padding-top: 30px; 
+  margin: 0 auto;
+  height: 18px;
+  font-family: 'Gotham Book',sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: #4a4a4a;
+  padding-bottom:20px; 
+}
+
+.contact .c-code{
+  width:60px;
+background-color:#dde3e9;
+line-height: 40px;
+text-align: center;
+font-family: 'Gotham Book', sans-serif;
+font-weight: 600;
+
+}
+
+.contact .c-call {
+  width:100px;
+  text-align: center;
+  border-radius: 2px;
+  line-height: 40px;
+  background-color: #fb637e;
+  color: white;
+}
+.contact-bar{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  width:400px;
+  height:40px;
+  font-size: 14px;
+}
+
+.contact .c-number{
+  width: 240px;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+::placeholder{
+  font-size: 14px;
+  padding:10px;
+}
+
+.l-other .other-title{
+  padding: 40px 0px; 
+  font-family: 'Gotham Book',sans-serif;
+  font-size: 22px;
+  text-align: center;
+  color: #4a4a4a
+}
+
+.o-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:140px;
+  width:111px;
+  background-color: rgba(234, 234, 234, 0.5);
+}
+
+.l-other .icon{
+  height:70px;
+  width:auto;
+  /* background-size: contain; */
+}
+
+.l-other .o-title{
+  font-family: 'Gotham Book',sans-serif;
+  font-size: 20px;
+  color: #4a4a4a;
+  padding-bottom: 10px;
+}
+
+.l-other .o-body{
+  width: 230px;
+  height: 40px;
+  font-family: 'Gotham Book',sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #9b9b9b;
+  padding-bottom: 10px;
+}
+
+.l-other .o-more{
+  height: 20px;
+  font-family: 'Gotham Book',sans-serif;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #fb637e;
+}
+
+.other-box{
+  padding: 20px;
+}
+
+.other-box > *{
+  margin: 0;
+}

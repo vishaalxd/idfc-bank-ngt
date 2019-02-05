@@ -6,7 +6,7 @@
     <title>IDFC Bank</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="fonts/font.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -17,79 +17,86 @@
         <nav>
             <div class="list">
                 <div class="hamburger"></div>
-                <label>MENU</label>
+                <label id="menu">MENU</label>
             </div>
         </nav>
-        <figure>
+        <figure class="h-img">
             <img id="h-icon1" src="images/idfc-bank-logo.jpg" alt="logo" />
         </figure>
         <div class="login">
-            <img id="h-icon2" src="images/lock.png" />
+            <img id="h-icon2" src="images/lock.png" alt="lock" />
             <button class="login-button">LOGIN</button>
         </div>
     </header>
+    <div class="search"><img class="s-img" src="images/search.png" alt="search"></div>
 
 
     <!--carousal-->
     <div class="carousal-container">
         <section class="carousal">
-            <h3>Personal Loan</h3>
-            <p>For all your needs big and small, we help you fulfill them and get much more</p>
-            <div class="c-panel">
-                <div class="c-items">
+            <h3 class="cc-title">Personal Loan</h3>
+            <p class="para">For all your needs big and small, we help you fulfill them and get much more</p>
+            <ul class="c-panel">
+                <li class="c-items">
                     <div class="c-item">
-                        <figure><img class="c-image" src="images/pl-prelogin-gif-savings.png" alt="img" /></figure>
-                        <h3>Savings</h3>
-                        <p>Save more on your interest</p>
-                        <span>SEE MORE</span>
+                        <figure><img class="c-image" src="images/gifs/gif_savings.gif" alt="img" /></figure>
+                        <h3 class="head">Savings</h3>
+                        <p class="para">Save more on your interest</p>
+                        <span class="see-more">SEE MORE</span>
                     </div>
-                </div>
-                <div class="loanb c-items hidden ">
+                </li>
+                <li class="loanb c-items hidden ">
                     <div class="ch-item">
                         <figure><img class="ch-image" src="images/pl-prelogin-gif-flexibility.png" alt="img" /></figure>
-                        <h3>Flexibility</h3>
+                        <h3 class="head">Flexibility</h3>
                         <section class="tab">
                             <section class="tab-1">
-                                <div><p class="t-month">3 months
-                                    Tenure Option</p>
+                                <div>
+                                    <p class="t-month">3 months
+                                        Tenure Option</p>
                                     <div class="line"></div>
-                                <p class="t-period">With tenure period as less
-                                    as 3 months</p></div>
+                                    <p class="t-period">With tenure period as less
+                                        as 3 months</p>
+                                </div>
                             </section>
                             <section class="tab-2">
-                            <div><p class="t-month">Flexible
-                                    EMI & Tenure</p>
+                                <div>
+                                    <p class="t-month">Flexible
+                                        EMI & Tenure</p>
                                     <div class="line"></div>
-                                <p class="t-period">With tenure period as less
-                                    as 3 months</p></div>
+                                    <p class="t-period">With tenure period as less
+                                        as 3 months</p>
+                                </div>
                             </section>
                         </section>
-                        <span onclick="loanHandler(2)">SEE MORE</span>
+                        <span class="see-more" onclick="loanHandler(2)">SEE MORE</span>
                     </div>
-                </div>
-                <div class="loanf c-items" >
+                </li>
+                <li class="loanf c-items">
                     <div class="c-item">
-                        <figure><img class="c-image" src="images/pl-prelogin-gif-flexibility.png" alt="img" /></figure>
-                        <h3>Flexibility</h3>
-                        <p>Payback on your own terms</p>
-                        <span onclick="loanHandler(1)">SEE MORE</span>
+                        <figure><img class="c-image" src="images/gifs/pl_flexibility.gif" alt="img" /></figure>
+                        <h3 class="head">Flexibility</h3>
+                        <p class="para">Payback on your own terms</p>
+                        <span class="see-more" onclick="loanHandler(1)">SEE MORE</span>
                     </div>
-                </div>  
-                <div class="c-items">
+                </li>
+                <div class="c-items c-border">
                     <div class="c-item">
-                        <figure><img class="c-image" src="images/group-2.png" alt="img" /></figure>
-                        <h3>Convenience</h3>
-                        <p>Manage your loans with ease</p>
-                        <span>SEE MORE</span>
+                        <figure><img class="c-image" src="images/gifs/gif_convenience.gif" alt="img" /></figure>
+                        <h3 class="head">Convenience</h3>
+                        <p class="para">Manage your loans with ease</p>
+                        <span class="see-more">SEE MORE</span>
                     </div>
-                </div>
-            </div>
+                    </li>
+            </ul>
         </section>
     </div>
 
 
     <!--Tell us About Section-->
+    <div class="hump"></div>
     <section class="tells-us-container">
+        <div style="height:30px"></div>
         <h3>Tell us about you and see how you can benefit</h3>
         <div class="tu-body">
             I need a personal loan of <img class="currency" src="images/fill-1.svg" alt="Rs" /><input class="blanks" />
@@ -97,8 +104,8 @@
                 class="blanks" /> per month.
         </div>
         <div class="use-card">
-            <aside>
-                <input type="checkbox" id="checkbox" onclick="credithandle()"/><span class="checkmark"></span>
+            <aside class="cc-aside">
+                <input type="checkbox" id="checkbox" onclick="credithandle()" /><span class="checkmark"></span>
                 I use credit card
             </aside>
             <section class="ccard-checked hidden">
@@ -117,27 +124,30 @@
                     I pay a total monthly EMI of <br><img class="currency" src="images/fill-1.svg" alt="Rs" /><input
                         class="blanks" />
                     &nbsp;<img class="currency" src="images/fill-1.svg" alt="Rs" /><input class="blanks" />
-                    <section>
-                        <p>For any personal loan<br>
+                    <section class="sectn">
+                        <p class="para">For any personal loan<br>
                             (Unsecure loan)</p>
-                        <p>For any home loan or <br>
+                        <p class="para">For any home loan or <br>
                             loan against property (Secure loan)</p>
                     </section>
                 </div>
             </div>
-            <button class="red-button">Show me my solution</button>
+            <a class="red-button" href="ploan.html">Show me my solution</a>
         </section>
 
 
         <div class="emi">
-            <figure><img class="add-icon" src="images/group-7.png" /></figure>
-            <p>Add your existing EMI if any</p>
+            <figure><img class="add-icon" src="images/group-7.png" alt="add" /></figure>
+            <p class="para">Add your existing EMI if any</p>
         </div>
     </section>
+    <div class="hump-reverse"></div>
+
 
 
     <!--Footer-->
     <footer>
+        <!-- <div id="humps-footer"></div> -->
         <section class="f-section border-pink">
             <p>2015 IDFC</p>
             <p>All Rights Reserved</p>
