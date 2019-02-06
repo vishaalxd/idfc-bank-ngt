@@ -28,3 +28,35 @@ function loanHandler(val) {
         loanBack.classList.add("hidden");
     }
 }
+
+
+
+function dropdownHandler(val){
+    let dropdown = document.querySelector(`.${val}`);
+    console.log(val);
+    dropdown.classList.toggle('visible');
+}
+
+
+
+
+function infoHandler(val){
+    
+    switch(val){
+        case 1: {
+            let dropdown = document.querySelector(' .loan-info ');
+            console.log(dropdown);
+            dropdown.classList.toggle('hidden');
+            break;
+        }
+        case 2: {
+            let dropdown = document.querySelector(' .tennure-info ');
+            console.log(dropdown);
+            dropdown.classList.toggle('hidden');
+            break;
+        }
+    }
+   
+    
+}
+

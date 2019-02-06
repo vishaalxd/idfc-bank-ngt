@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="fonts/font.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="styesheet" href="css/checkbox.css">
 </head>
 
 <body>
@@ -16,133 +17,144 @@
     <header>
         <nav>
             <div class="list">
-                <div class="hamburger"></div>
-                <label id="menu">MENU</label>
+                <div class="menu-icon">
+                    <div class="hamburger"></div>
+                </div>
+                <label id="menu" class="black">MENU</label>
             </div>
         </nav>
-        <figure class="h-img">
-            <img id="h-icon1" src="images/idfc-bank-logo.jpg" alt="logo" />
+        <figure class="logo">
+            <img id="header-icon1" src="images/idfc-bank-logo.jpg" alt="logo" />
         </figure>
         <div class="login">
-            <img id="h-icon2" src="images/lock.png" alt="lock" />
-            <button class="login-button">LOGIN</button>
+            <img id="header-icon2" src="images/lock.png" alt="lock" />
+            <button class="login-button black">LOGIN</button>
         </div>
     </header>
     <div class="search"><img class="s-img" src="images/search.png" alt="search"></div>
 
-
-    <!--carousal-->
-    <div class="carousal-container">
-        <section class="carousal">
-            <h3 class="cc-title">Personal Loan</h3>
-            <p class="para">For all your needs big and small, we help you fulfill them and get much more</p>
-            <ul class="c-panel">
-                <li class="c-items">
-                    <div class="c-item">
-                        <figure><img class="c-image" src="images/gifs/gif_savings.gif" alt="img" /></figure>
-                        <h3 class="head">Savings</h3>
-                        <p class="para">Save more on your interest</p>
-                        <span class="see-more">SEE MORE</span>
-                    </div>
-                </li>
-                <li class="loanb c-items hidden ">
-                    <div class="ch-item">
-                        <figure><img class="ch-image" src="images/pl-prelogin-gif-flexibility.png" alt="img" /></figure>
-                        <h3 class="head">Flexibility</h3>
-                        <section class="tab">
-                            <section class="tab-1">
-                                <div>
-                                    <p class="t-month">3 months
-                                        Tenure Option</p>
-                                    <div class="line"></div>
-                                    <p class="t-period">With tenure period as less
-                                        as 3 months</p>
-                                </div>
-                            </section>
-                            <section class="tab-2">
-                                <div>
-                                    <p class="t-month">Flexible
-                                        EMI & Tenure</p>
-                                    <div class="line"></div>
-                                    <p class="t-period">With tenure period as less
-                                        as 3 months</p>
-                                </div>
-                            </section>
-                        </section>
-                        <span class="see-more" onclick="loanHandler(2)">SEE MORE</span>
-                    </div>
-                </li>
-                <li class="loanf c-items">
-                    <div class="c-item">
-                        <figure><img class="c-image" src="images/gifs/pl_flexibility.gif" alt="img" /></figure>
-                        <h3 class="head">Flexibility</h3>
-                        <p class="para">Payback on your own terms</p>
-                        <span class="see-more" onclick="loanHandler(1)">SEE MORE</span>
-                    </div>
-                </li>
-                <div class="c-items c-border">
-                    <div class="c-item">
-                        <figure><img class="c-image" src="images/gifs/gif_convenience.gif" alt="img" /></figure>
-                        <h3 class="head">Convenience</h3>
-                        <p class="para">Manage your loans with ease</p>
-                        <span class="see-more">SEE MORE</span>
-                    </div>
+    <!--MAIN CONTENTS-->
+    <main>
+        
+        <!--carousal-->
+        <div class="carousal-container">
+            <section class="carousal">
+                <h3 class="cc-title">Personal Loan</h3>
+                <p class="para">For all your needs big and small, we help you fulfill them and get much more</p>
+                <ul class="c-panel">
+                    <li class="c-items">
+                        <div class="c-item">
+                            <figure><img class="c-image" src="images/gifs/gif_savings.gif" alt="img" /></figure>
+                            <h3 class="head">Savings</h3>
+                            <p class="para">Save more on your interest</p>
+                            <span class="see-more">SEE MORE</span>
+                        </div>
                     </li>
-            </ul>
-        </section>
-    </div>
-
-
-    <!--Tell us About Section-->
-    <div class="hump"></div>
-    <section class="tells-us-container">
-        <div style="height:30px"></div>
-        <h3>Tell us about you and see how you can benefit</h3>
-        <div class="tu-body">
-            I need a personal loan of <img class="currency" src="images/fill-1.svg" alt="Rs" /><input class="blanks" />
-            <br>I am working at <input class="blanks" /> and <br>make <img class="currency" src="images/fill-1.svg" alt="Rs" /><input
-                class="blanks" /> per month.
-        </div>
-        <div class="use-card">
-            <aside class="cc-aside">
-                <input type="checkbox" id="checkbox" onclick="credithandle()" /><span class="checkmark"></span>
-                I use credit card
-            </aside>
-            <section class="ccard-checked hidden">
-                <div class="tu-body ccard">
-                    My average credit card expense <br> is <img class="currency" src="images/fill-1.svg" alt="Rs" /><input
-                        class="blanks" />
-                    monthly
-                </div>
+                    <li class="loanb c-items hidden ">
+                        <div class="ch-item">
+                            <figure><img class="ch-image" src="images/pl-prelogin-gif-flexibility.png" alt="img" /></figure>
+                            <h3 class="head">Flexibility</h3>
+                            <section class="tab">
+                                <section class="tab-1">
+                                    <div>
+                                        <p class="t-month bold">3 months <br>
+                                            Tenure Option</p>
+                                        <div class="line"></div>
+                                        <p class="t-period book">With tenure period as less
+                                            as 3 months</p>
+                                    </div>
+                                </section>
+                                <section class="tab-2">
+                                    <div>
+                                        <p class="t-month bold">Flexible
+                                            EMI & Tenure</p>
+                                        <div class="line"></div>
+                                        <p class="t-period book">With tenure period as less
+                                            as 3 months</p>
+                                    </div>
+                                </section>
+                            </section>
+                            <span class="see-more" onclick="loanHandler(2)">SEE MORE</span>
+                        </div>
+                    </li>
+                    <li class="loanf c-items">
+                        <div class="c-item">
+                            <figure><img class="c-image" src="images/gifs/pl_flexibility.gif" alt="img" /></figure>
+                            <h3 class="head">Flexibility</h3>
+                            <p class="para">Payback on your own terms</p>
+                            <span class="see-more" onclick="loanHandler(1)">SEE MORE</span>
+                        </div>
+                    </li>
+                    <div class="c-items c-border">
+                        <div class="c-item">
+                            <figure><img class="c-image" src="images/gifs/gif_convenience.gif" alt="img" /></figure>
+                            <h3 class="head">Convenience</h3>
+                            <p class="para">Manage your loans with ease</p>
+                            <span class="see-more">SEE MORE</span>
+                        </div>
+                        </li>
+                </ul>
             </section>
         </div>
 
-        <!--Credit Card Checked-->
-        <section class="ccard-checked hidden">
-            <div class="use-card">
-                <div class="tu-body ccard">
-                    I pay a total monthly EMI of <br><img class="currency" src="images/fill-1.svg" alt="Rs" /><input
+        <!--Tell us About Section-->
+        <div class="hump"></div>
+        <section class="tells-us-container">
+            <div style="height:30px"></div>
+            <h3 class="tell">Tell us about you and see how you can benefit</h3>
+            <div class="outline-box">
+                <div class="borders-top"><img class="b-left" src="images/outline.svg" /><img class="b-right" src="images/outline.svg" /></div>
+                <div class="tu-body padding-tb-30">
+                    I need a personal loan of <img class="currency" src="images/fill-1.svg" alt="Rs" /><input type="number"
                         class="blanks" />
-                    &nbsp;<img class="currency" src="images/fill-1.svg" alt="Rs" /><input class="blanks" />
-                    <section class="sectn">
-                        <p class="para">For any personal loan<br>
-                            (Unsecure loan)</p>
-                        <p class="para">For any home loan or <br>
-                            loan against property (Secure loan)</p>
+                    <br>I am working at <input class="blanks" pattern="[0-9]" /> and <br>make <img class="currency" src="images/fill-1.svg"
+                        alt="Rs" /><input type="number" class="blanks" /> per month.
+                </div>
+                <div class="use-card">
+                    <aside class="cc-aside">
+                        <input type="checkbox" id="checkbox" onclick="credithandle()" /><label for="checkbox" id="checkmark"></label>
+                        I use credit card
+
+                    </aside>
+                    <section class="ccard-checked hidden">
+                        <div class="tu-body ccard">
+                            My average credit card expense <br> is <img class="currency" src="images/fill-1.svg" alt="Rs" /><input
+                                type="number" class="blanks" />
+                            monthly
+                        </div>
                     </section>
                 </div>
-            </div>
-            <a class="red-button" href="ploan.html">Show me my solution</a>
+
+                <!--Credit Card Checked-->
+                <section class="ccard-checked hidden">
+                    <div class="use-card">
+                        <div class="tu-body ccard">
+                            I pay a total monthly EMI of <br><img class="currency" src="images/fill-1.svg" alt="Rs" /><input
+                                type="number" class="blanks" />
+                            &nbsp;<img class="currency" src="images/fill-1.svg" alt="Rs" /><input type="number" class="blanks" />
+                            <section class="sectn">
+                                <p class="para">For any personal loan<br>
+                                    (Unsecure loan)</p>
+                                <p class="para">For any home loan or <br>
+                                    loan against property (Secure loan)</p>
+                            </section>
+                        </div>
+                    </div>
+                    <a class="red-button" href="ploan.html">Show me my solution</a>
+                </section>
+
+
+                <div class="emi">
+                    <figure class="add-button"><img class="add-icon" src="images/group-7.png" alt="add" /></figure>
+                    <p class="para">Add your existing EMI if any</p>
+                </div>
+                <div class="outline-box padding-tb-30">
+                    <div class="borders-bottom"><img class="b-left" src="images/outline.svg" /><img class="b-right" src="images/outline.svg" /></div>
+                </div>
         </section>
 
-
-        <div class="emi">
-            <figure><img class="add-icon" src="images/group-7.png" alt="add" /></figure>
-            <p class="para">Add your existing EMI if any</p>
-        </div>
-    </section>
-    <div class="hump-reverse"></div>
-
+        <div class="hump-reverse"></div>
+    </main>
 
 
     <!--Footer-->

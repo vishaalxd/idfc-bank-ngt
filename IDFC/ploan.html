@@ -17,92 +17,249 @@
     <header>
         <nav>
             <div class="list">
-                <div class="hamburger"></div>
-                <label id="menu">MENU</label>
+                <div class="menu-icon">
+                    <div class="hamburger"></div>
+                </div>
+                <label id="menu" class="black">MENU</label>
             </div>
         </nav>
-        <figure class="h-img">
-            <img id="h-icon1" src="images/idfc-bank-logo.jpg" alt="logo" />
+        <figure class="logo">
+            <img id="header-icon1" src="images/idfc-bank-logo.jpg" alt="logo" />
         </figure>
         <div class="login">
-            <img id="h-icon2" src="images/lock.png" />
+            <img id="header-icon2" src="images/lock.png" />
             <button class="login-button">LOGIN</button>
         </div>
         <br>
-       
+
     </header>
     <div class="search"><img class="s-img" src="images/search.png"></div>
-    <div class="loan-container">
 
-        <!--Plan-->
+
+    <!--Plan-->
+    <div class="loan-container">
         <section class="plan">
             <div class="plan-column">
-                <section>
+                <section class="p-top-column">
                     <div class="loan-req">Requested loan amount</div>
-                    <div class="loan-amt"> <img class="rupee" src="images/fill-black.svg" alt="Rs" />8,00,000</div>
+                    <div class="loan-amt"> <img class="rupee" src="images/fill-black.svg" alt="Rs" />8,00,000 <div
+                        onclick="dropdownHandler('dp0')" class="drop-caret">
+                            <div class="drop"></div>
+                        </div>
+                    </div>
+                    
+                    <!--DropDown-->
+                    <ul class="dropdown dp0">
+                            <li>
+                                <div class="drop-1">
+                                    <div class="d-title padding-d-title">Income</div><input type="range" min="1" max="100"
+                                        value="50" class="slider" class="d-range">
+                                    <div class="d-limits">
+                                        <p id="p1"> &#8377; 50,000</p>
+                                        <p id="p2"> &#8377; 15,50,000</p>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="drop-1">
+                                    <div class="d-title">Bonus</div><input type="range" min="1" max="100" value="50" class="slider"
+                                        class="d-range">
+                                    <div class="d-limits">
+                                        <p id="p1"> &#8377; 50,000</p>
+                                        <p id="p2"> &#8377; 15,50,000</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                 
+
                 </section>
                 <div class="note">You can increase the loan amount</div>
             </div>
             <div class="plan-column">
-                <section>
+                <section class="p-top-column">
                     <div class="loan-req">Monthly income + Bonus</div>
-                    <div class="loan-amt"> <img class="rupee" src="images/fill-black.svg" alt="Rs" />8,00,000</div>
-                    </section>
+                    <div class="loan-amt"> <img class="rupee" src="images/fill-black.svg" alt="Rs" />8,00,000 <div
+                            onclick="dropdownHandler('dp1')" class="drop-caret">
+                            <div class="drop"></div>
+                        </div>
+                    </div>
+
+                    <!--DropDown-->
+                    <ul class="dropdown dp1">
+                        <li>
+                            <div class="drop-1">
+                                <div class="d-title padding-d-title">Income</div><input type="range" min="1" max="100"
+                                    value="50" class="slider" class="d-range">
+                                <div class="d-limits">
+                                    <p id="p1"> &#8377; 50,000</p>
+                                    <p id="p2"> &#8377; 15,50,000</p>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="drop-1">
+                                <div class="d-title">Bonus</div><input type="range" min="1" max="100" value="50" class="slider"
+                                    class="d-range">
+                                <div class="d-limits">
+                                    <p id="p1"> &#8377; 50,000</p>
+                                    <p id="p2"> &#8377; 15,50,000</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+             
+                </section>
                 <!-- <div class="note">You can increase the loan amount</div> -->
             </div>
             <div class="plan-column">
-                <section>
+                <section class="p-top-column">
                     <div class="loan-req">Credit card expense</div>
-                    <div class="loan-amt"> <img class="rupee" src="images/fill-black.svg" alt="Rs" />8,00,000</div>
+                    <div class="loan-amt"> <img class="rupee" src="images/fill-black.svg" alt="Rs" />8,00,000 <div
+                        onclick="dropdownHandler('dp2')" class="drop-caret">
+                            <div class="drop"></div>
+                        </div>
+                    </div>
+                    
+                    <!--DropDown-->
+                    <ul class="dropdown dp2">
+                            <li>
+                                <div class="drop-1">
+                                    <div class="d-title padding-d-title">Income</div><input type="range" min="1" max="100"
+                                        value="50" class="slider" class="d-range">
+                                    <div class="d-limits">
+                                        <p id="p1"> &#8377; 50,000</p>
+                                        <p id="p2"> &#8377; 15,50,000</p>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="drop-1">
+                                    <div class="d-title">Bonus</div><input type="range" min="1" max="100" value="50" class="slider"
+                                        class="d-range">
+                                    <div class="d-limits">
+                                        <p id="p1"> &#8377; 50,000</p>
+                                        <p id="p2"> &#8377; 15,50,000</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+        
                 </section>
                 <!-- <div class="note">You can increase the loan amount</div> -->
             </div>
             <div class="plan-column">
-                <section>
+                <section class="p-top-column">
                     <div class="loan-req">Unsecure monthly EMI</div>
-                    <div class="loan-amt"> <img class="rupee" src="images/fill-black.svg" alt="Rs" />8,00,000</div>
+                    <div class="loan-amt"> <img class="rupee" src="images/fill-black.svg" alt="Rs" />8,00,000 <div
+                        onclick="dropdownHandler('dp3')"  class="drop-caret">
+                            <div class="drop"></div>
+                        </div>
+                    </div>
+                    
+                    <!--DropDown-->
+                    <ul class="dropdown dp3">
+                            <li>
+                                <div class="drop-1">
+                                    <div class="d-title padding-d-title">Income</div><input type="range" min="1" max="100"
+                                        value="50" class="slider" class="d-range">
+                                    <div class="d-limits">
+                                        <p id="p1"> &#8377; 50,000</p>
+                                        <p id="p2"> &#8377; 15,50,000</p>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="drop-1">
+                                    <div class="d-title">Bonus</div><input type="range" min="1" max="100" value="50" class="slider"
+                                        class="d-range">
+                                    <div class="d-limits">
+                                        <p id="p1"> &#8377; 50,000</p>
+                                        <p id="p2"> &#8377; 15,50,000</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+    
                 </section>
                 <!-- <div class="note">You can increase the loan amount</div> -->
             </div>
             <div class="plan-column">
-                <section>
+                <section class="p-top-column">
                     <div class="loan-req">Secure monthly EMI</div>
-                    <div class="loan-amt"> <img class="rupee" src="images/fill-black.svg" alt="Rs" />8,00,000</div>
-                </section>
-                <!-- <div class="note">You can increase the loan amount</div> -->
+                    <div class="loan-amt"> <img class="rupee" src="images/fill-black.svg" alt="Rs" />8,00,000 <div
+                        onclick="dropdownHandler('dp4')" class="drop-caret">
+                            <div class="drop"></div>
+                        </div>
+                    </div>
+   
+                    <!--DropDown-->
+                    <ul class="dropdown dp4">
+                            <li>
+                                <div class="drop-1">
+                                    <div class="d-title padding-d-title">Income</div><input type="range" min="1" max="100"
+                                        value="50" class="slider" class="d-range">
+                                    <div class="d-limits">
+                                        <p id="p1"> &#8377; 50,000</p>
+                                        <p id="p2"> &#8377; 15,50,000</p>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="drop-1">
+                                    <div class="d-title">Bonus</div><input type="range" min="1" max="100" value="50" class="slider"
+                                        class="d-range">
+                                    <div class="d-limits">
+                                        <p id="p1"> &#8377; 50,000</p>
+                                        <p id="p2"> &#8377; 15,50,000</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+          
+        </section>
+    </div>
+        <!-- <div class="note">You can increase the loan amount</div> -->
+    </div>
+    </section>
+
+
+    <!--Details Plan-->
+    <a href="index.html">
+        <div class="back-button">
+            <div class="back-arrow"></div>
+        </div>
+    </a>
+    <section class="p-details">
+        <section class="details-amt">
+            <p class="d-title">You can get the loan amount of </p>
+            <div onclick="infoHandler(1)" class="info-button loan-info-position ">i</div>
+            <div class="caution loan-info hidden">
+                    <p class="para">Get tenure as less as 3 months and save more on interest.</p>
+                </div>
+            <div class="d-amt"> <img class="rupee large" src="images/fill-black.svg" alt="Rs" />8 Lakhs</div>
+        </section>
+        <section class="monthly">
+            <div class="m-emi">
+                <p>At monthly EMI of</p>
+                <div class="loan-amt"> <img class="rupee" src="images/fill-black.svg" alt="Rs" />26,000</div>
+            </div>
+            <div class="m-tenure">
+                <p>For tenure period of</p>
+                <div  onclick="infoHandler(2)" class="info-button t-period-info-position">i</div>
+                <div class="caution tennure-info hidden">
+                    <p class="para">Get tenure as less as 3 months and save more on interest.</p>
+                </div>
+                <p class="period">30 Months</p>
             </div>
         </section>
-
-
-        <!--Details Plan-->
-       
-        <section class="p-details">
-            <section class="details-amt">
-                <p class="d-title">You can get the loan amount of</p>
-                <div class="d-amt"> <img class="rupee large" src="images/fill-black.svg" alt="Rs" />8 Lakhs</div>
-            </section>
-            <section class="monthly">
-                <div class="m-emi">
-                    <p>At monthly EMI of</p>
-                    <div class="loan-amt"> <img class="rupee" src="images/fill-black.svg" alt="Rs" />26,000</div>
-                </div>
-                <div class="m-tenure">
-                    <p>For tenure period of</p>
-                    <p class="period">30 Months</p>
-                </div>
-            </section>
-            <section class="interest-rate">
-                Interest rates are calculated at 12%p.a.<br>
-                This quote is not an actual representation of your eligibility.
-            </section>
+        <section class="interest-rate">
+            Interest rates are calculated at 12%p.a.<br>
+            This quote is not an actual representation of your eligibility.
         </section>
+    </section>
     </div>
 
 
     <!--Recommendations-->
     <div class="hump"></div>
     <div class="tells-us-container">
-        <h3 class="recommendations">Here are our recommendations for you</h3>
+        <h3 class="recommendations tell">Here are our recommendations for you</h3>
         <section class="r-tabs">
             <section class="r-tab">
                 <img class="loan-four" src="images/4image-loan.PNG" alt="loans" />
@@ -110,53 +267,59 @@
                 <p class="r-title">Part Pre-payment</p>
                 <p class="r-body">Pre-pay extra loan amount at no extra charge and save on your interest.
                     Check out your savings!</p>
+
+
                 <section class="r-lower">
                     <div class="input">
                         <div class="annual-pay">
                             <p class="i-pay">How much you can
                                 pre-pay annually?</p>
-                            <input class="i-box" />
+                            <div class="i-box-wrapper"> <img class="float-rupee" src="images/fill-black.svg" alt="Rs"><input
+                                    type="number" class="i-box" /></div>
                         </div>
                         <div class="annual-rate">
-                                <p class="i-pay">How much you can
-                                        pre-pay annually?</p>
-                                    <input class="i-box" />
+                            <p class="i-pay">How much you can
+                                pre-pay annually?</p>
+                            <div class="i-box-wrapper"> <img class="float-rupee" src="images/fill-black.svg" alt="Rs"><input
+                                    type="number" class="i-box"  /></div>
                         </div>
                     </div>
                 </section>
                 <p class="see-how">See How</p>
             </section>
 
+
             <section class="r-tab">
-                    <img class="loan-four" src="images/savings-loan.PNG" alt="loans" />
-                    <br>
-                    <p class="r-title">Balance Transfer</p>
-                    <p class="r-body">Transfer your existing loans at a lower interest rate</p>
-                    <section class="l-lower">
-                        <p class="calc">Calculate your</p>
-                        <button class="red-button small">Savings</button>
-                    </section>
+                <img class="loan-four" src="images/savings-loan.PNG" alt="loans" />
+                <br>
+                <p class="r-title">Balance Transfer</p>
+                <p class="r-body">Transfer your existing loans at a lower interest rate</p>
+                <section class="l-lower">
+                    <p class="calc">Calculate your</p>
+                    <button class="red-button small">Savings</button>
                 </section>
+            </section>
         </section>
 
         <section class="md-emergency">
-            <p>want to use this loan for <span>medical emergency.</span></p>
+            <p class="para
+            ">want to use this loan for <span>medical emergency.</span></p>
             <ul class="e-icons">
-                    <li class="e-cont"><img class="icons" src="images/icons/page-1 (2).svg"/></li>
-                    <li class="e-cont"><img class="icons" src="images/icons/page-1 (1).svg"/></li>
-                    <li class="e-cont"><img class="icons" src="images/icons/page-1.svg"/></li>
-                    <li class="e-cont"><img class="icons" src="images/icons/page-1 (5).svg"/></li>
-                    <li class="e-cont"><img class="icons" src="images/icons/page-1 (3).svg"/></li>
-                    <li class="e-cont"><img class="icons" src="images/icons/page-1 (4).svg"/></li>
-              
+                <li class="e-cont"><img class="icons" src="images/icons/page-1 (2).svg" /></li>
+                <li class="e-cont"><img class="icons" src="images/icons/page-1 (1).svg" /></li>
+                <li class="e-cont"><img class="icons" src="images/icons/page-1.svg" /></li>
+                <li class="e-cont"><img class="icons" src="images/icons/page-1 (5).svg" /></li>
+                <li class="e-cont"><img class="icons" src="images/icons/page-1 (3).svg" /></li>
+                <li class="e-cont"><img class="icons" src="images/icons/page-1 (4).svg" /></li>
+
             </ul>
         </section>
 
         <section class="contact">
-            <p>To get started with this solution let us call you back</p>
+            <p class="para">To get started with this solution let us call you back</p>
             <div class="contact-bar">
                 <div class="c-code">+91</div>
-                <input class="c-number" placeholder="Leave your number here"/>
+                <input type="number" class="c-number" placeholder="Leave your number here" />
                 <div class="c-call">Call Me</div>
             </div>
         </section>
@@ -167,34 +330,34 @@
     <!--Other offerings-->
     <section class="l-other">
         <p class="other-title">Check out other offerings</p>
-        <div style="display: flex;justify-content:center;">
-                <section class="other-container" style="display: flex; border: 1px solid 
+        <div style="display:flex;justify-content:center;flex-wrap: wrap;">
+            <section class="other-container" style="display: flex; border: 1px solid 
                 #eaeaea;border-radius: 4px;margin-left:10px; margin-right:10px;">
-                    <div class="o-icon"><img class="icon" src="images/other1.PNG"/ alt="offers"></div>
-                    <div class="other-box">
-                        <p class="o-title">Simple Personal Loans</p>
-                        <p class="o-body">Overview of the content. Etiam porttitor mauris sed ipsum.</p>
-                        <p class="o-more">Know more</p>
-                    </div>
-                </section>
-                <section class="other-container" style="display: flex; border: 1px solid 
+                <div class="o-icon"><img class="icon" src="images/other1.PNG"/ alt="offers"></div>
+                <div class="other-box">
+                    <p class="o-title">Simple Personal Loans</p>
+                    <p class="o-body">Overview of the content. Etiam porttitor mauris sed ipsum.</p>
+                    <p class="o-more">Know more</p>
+                </div>
+            </section>
+            <section class="other-container" style="display: flex; border: 1px solid 
                 #eaeaea;border-radius: 4px">
-                    <div class="o-icon"><img class="icon" src="images/other2.PNG"/ alt="offers"></div>
-                    <div class="other-box">
-                        <p class="o-title">Personal loan saver</p>
-                        <p class="o-body">Overview of the content. Etiam porttitor mauris sed ipsum.</p>
-                        <p class="o-more">Know more</p>
-                    </div>
-                </section>
+                <div class="o-icon"><img class="icon" src="images/other2.PNG"/ alt="offers"></div>
+                <div class="other-box">
+                    <p class="o-title">Personal loan saver</p>
+                    <p class="o-body">Overview of the content. Etiam porttitor mauris sed ipsum.</p>
+                    <p class="o-more">Know more</p>
+                </div>
+            </section>
         </div>
     </section>
 
 
-    
+
 
     <!--Footer-->
     <footer>
-            <!-- <div id="humps-footer"></div> -->
+        <!-- <div id="humps-footer"></div> -->
         <section class="f-section border-pink">
             <p>2015 IDFC</p>
             <p>All Rights Reserved</p>
@@ -241,7 +404,7 @@
     </footer>
 
 
-    <script></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

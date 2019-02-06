@@ -16,25 +16,37 @@ header {
     
   }
 
+  .padding-tb-30{
+    padding: 30px 0px;
+  }
+  
+  .padding-b-30{
+    padding-top: 30px;
+  }
+
+
 
   .login-button{
    margin-left: 10px;
    padding: 0;
    font-size: 12px;
-   font-family: 'Gotham Bold',sans-serif;
+   font-family: 'Gotham Black',sans-serif;
    letter-spacing: 0.3px;
    border-style: none;
+   font-weight: 900;
    background: rgba(0,0,0,0);
+   height: 60px;
+   cursor: pointer;
   }
 
 
   .list{
     position: relative;
-    padding-left: 25px;
     display: flex;
     align-items: center;
     flex:2;
     justify-content: center;
+    height: 60px;
 
   }
 
@@ -44,8 +56,8 @@ header {
     height:2px;
     width:20px;
     background-color: #fb637e;
-    top:5px;
-    left: 95px;
+    /* top:30px;
+    left: 75px; */
   }
 
   .hamburger:before, .hamburger:after{
@@ -65,12 +77,15 @@ header {
 
   nav, .login{
     /* display: inline-block; */
-    flex:2;
+    flex:1;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 60px;
+    
   }
 
-  #h-icon1{
+  #header-icon1{
     height:38px;
     width:auto;
     flex:4;
@@ -81,9 +96,23 @@ header {
     height: 15px;
     font-size: 12px;
     font-weight: 900;
-    font-style: normal;
-    font-family: 'Gotham Bold',sans-serif;
+    margin-left: 30px;
     color: #333333;
+    cursor:pointer;
+  }
+
+  .black{
+    font-family: 'Gotham Black',sans-serif;
+  }
+  .book{
+    font-family: 'Gotham Book',sans-serif;
+  }
+
+  .bold{
+    font-family: 'Gotham Bold',sans-serif
+  }
+  .light{
+    font-family: 'Gotham Light',sans-serif;
   }
 
   .search{
@@ -91,7 +120,7 @@ header {
     position: absolute;
     text-align: right;
     background: none;
-  background-color: #f9f7ef;
+  /* background-color: #f9f7ef; */
   }
 
   ::placeholder{
@@ -100,18 +129,18 @@ header {
   }
 
   .search .s-img{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     
   }
 
-  #h-icon2{
+  #header-icon2{
     height:17.7px;
     width:auto;
     justify-content: center;
   }
 
-  .h-img{
+  .logo{
     flex:6;
     margin: 0 auto;
     text-align: center;
@@ -120,7 +149,7 @@ header {
   .carousal-container{
     width:100%;
     margin: 0px;
-    padding-bottom: 50px;ed
+    padding-bottom: 50px;
   height: auto;
   background-color: #f9f7ef;
   }
@@ -153,7 +182,7 @@ header {
     flex-wrap: wrap;
   }
 
-  @media screen and (max-width: 600px) and (min-width:400px) {
+  @media screen and (max-width: 600px) and (min-width:300px) {
    .c-panel{
      padding: 0;
    }
@@ -175,6 +204,14 @@ header {
     border-right:1px solid #e1e1e1;
     border-top: 1px solid #e1e1e1;
     border-left: 1px solid #e1e1e1;
+    padding: 10px;
+   }
+
+   .see-more{
+     padding-bottom: 24px;
+   }
+   .c-item .head , .ch-item .head{
+     padding-top:30px !important;
    }
 
    .carousal-container{
@@ -182,20 +219,35 @@ header {
    }
 
    .tu-body{
-     padding: 0px !important;
+     padding: 20px !important;
      font-size: 24px !important;
    }
    .use-card{
     margin-left:10px !important;
     margin-right: 10px !important;
    }
+
    h3{
      font-size: 16px;
      padding: 10px 20px;
    }
 
+
   }
 
+  @media only screen and (max-width:480px){
+    
+    .emi .para{
+      min-width: 200px !important;  
+      font-size: 12px !important;
+    }
+
+   .add-button{
+   min-width: 60px !important;  
+   font-size: 14px !important;
+  }
+
+  }
 
   .carousal .c-items{
     width:270px;
@@ -231,13 +283,16 @@ header {
     flex-direction: column;
   }
 
-  .hide{
-    visibility: hidden;
+  .visible{
+    transition: 0.4s ease-in-out;
+    height: 140px !important;
   }
 
   .c-item .head{
   font-size: 22px;
   color:#4a4a4a;
+  padding-top:52px;
+  margin:auto;
   }
 
   .c-item .para{
@@ -252,6 +307,7 @@ header {
   font-size: 10px;
   text-align: center;
   color: #fb637e;
+  cursor:pointer;
   }
 
 
@@ -290,7 +346,7 @@ header {
     font-size: 22px;
   color:#4a4a4a;
     padding-top:10px;
-    margin: 0;
+    margin: 0 auto;
     padding-bottom: 12.5px;
   }
 
@@ -300,7 +356,7 @@ header {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-bottom:90px;
+  padding-bottom:55px;
   }
 
   .humps{
@@ -309,13 +365,14 @@ header {
     padding-bottom: 50px;
   }
 
-   h3{
-    color:white;
+   .tell{
+    color: white;
     font-weight: 900;
     text-align: center;
     font-size: 20px;
-    line-height: 1;
-  }
+    margin: 0 auto;
+    padding-bottom: 54px;
+} 
 
   .tu-body{
    font-family: 'Gotham Book',sans-serif;
@@ -325,17 +382,18 @@ header {
     margin: 0 auto;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 30px;
+    /* padding-bottom: 20px; */
+    padding-top: 30px;
   }
 
   .blanks{
     border-style: none;
     background: none;
     width:180px;
-    font-size: 28px;
+    font-size: 24px;
     outline: none;
     padding-left: 10px;
-    font-family: 'Gotham Book';
+    font-family: 'Gotham Book',sans-serif;
     border-bottom: 4px dotted #fb637e;
   }
 
@@ -345,7 +403,7 @@ header {
     text-align: center;
     font-size: 16px;
     padding: 20px;
-    border-top: 1px solid rgba(74, 74, 74, 0.1);
+    /* border-top: 1px solid rgba(74, 74, 74, 0.1); */
     /* border-bottom: 1px solid rgba(74, 74, 74, 0.1); */
     line-height: 24px;
    
@@ -359,6 +417,11 @@ header {
   
   background-color: #ffffff;
   }
+
+  #checkmark{
+    background-color: greenyellow;
+    color:white;
+  }
   
   .use-card .cc-aside{
     margin: 0 auto;
@@ -369,6 +432,9 @@ header {
     justify-content: center;
     align-items: center;
     font-size: 16px;
+    border-top: 1px solid rgba(74, 74, 74, 0.1); 
+    border-bottom: 1px solid rgba(74, 74, 74, 0.1);
+    padding: 20px 0px;
   }
 
   .emi {
@@ -381,7 +447,39 @@ header {
     border-radius: 6px;
     background-color: #f9f9f9;
     transition: 2.7s;
+    width:30%;
   }
+
+  .borders-top, .borders-bottom{
+    width:80%;
+    
+    margin: 0 auto;
+  }
+
+  .b-left{
+   float: left;
+  }
+
+  .menu-icon{
+    position: relative;
+    cursor:pointer;
+  }
+
+  .b-right{
+    float:right;
+    transform: rotate(90deg);
+  }
+
+  .borders-bottom .b-left{
+    float: left;
+    transform: rotate(-90deg);  
+  }
+
+  .borders-bottom .b-right{
+    float: right;
+    transform: rotate(180deg);
+  }
+
 
   .ccard{
     margin: 0 auto;
@@ -404,7 +502,7 @@ header {
     font-family: 'Gotham Book',sans-serif;
     line-height: 47px;
     height: 47px;
-    width:280px;
+    min-width:280px;
     font-size: 16px;
   margin: 0 auto;
   text-align: center;
@@ -418,10 +516,10 @@ header {
     height: 20px;
   }
 
-  .emi figure{
+  .emi .add-button{
     border-radius: 6px;
     margin: 0;
-    width: 80px;
+    min-width: 80px;
     height:47px;
     background-color: #ffffff;
     display:flex;
@@ -434,8 +532,8 @@ header {
 
   footer{
     flex-wrap: wrap;
-    max-width:80%;
-    padding-top:80px;
+    width:80%;
+    padding-top:85px;
     display: flex;
     margin: 0 auto;
     justify-content: center;
@@ -480,37 +578,6 @@ header {
     width:auto;
   }
 
-
-  .humps:before,
-.humps:after {
-  content: "";
-  position: absolute;
-  transform: translateY(2px);
-  left: 0;
-  right: 0;
-  bottom: 25px; /*h/2*/
-  height: 50px; /*h*/
-  background: radial-gradient(closest-side, #fcdf8e, #fcdf8e, 50%, transparent 50%);
-  /*or farthest-side*/
-  background-size: 50px 50px; /*h h*/
-  background-position: 0 25px; /*0 h/2*/
-  background-repeat: repeat-x;
-}
-
-.humps:after {
-  background: radial-gradient(
-    closest-side,
-    transparent,
-    transparent 50%,
-    #fcdf8e 50%
-  );
-  /*or farthest-side*/
-  background-size: 50px 50px; /*h h*/
-  background-position: 25px -25px; /*h/2 -h/2*/
-  background-repeat: repeat-x;
-  bottom: -25px;
-}
-
 .red-button{
   margin-top: 30px;
   margin-right: auto;
@@ -526,6 +593,7 @@ header {
   text-align: center;
   color: #ffffff;
   border-style:none;
+  cursor:pointer;
   text-transform: uppercase; 
 }
 .ccard-checked{
@@ -542,8 +610,10 @@ header {
 }
 
 .hidden{
-  transition: all 0.6s;
+  transition: 1s;
  display: none !important;
+ height: 0px !important;
+
 }
 
 .tab{
@@ -565,11 +635,14 @@ header {
   color: #4a4a4a;
 }
 
+.tab-1{
+  border-right: 0px;
+}
+
 .tab .t-period{
   font-size: 12px;
   line-height: 1.33;
-  font-family: 'Gotham Book',sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
   color: #9b9b9b;
   padding-bottom: 10px;
@@ -591,8 +664,10 @@ header {
 
 
 .hump-reverse {
+  z-index: -1;
+    position: absolute;
   width:100%;
-  height:36px;
+  height:35px;
   background: #ffffff url('hump.png') bottom repeat-x;
   transform: rotate(180deg);
 }
@@ -601,4 +676,145 @@ a{
   text-decoration: none;
   color: white;
   
+}
+
+.back-arrow{
+  /* z-index: 1; */
+  position: absolute;
+  top: 28px;
+  left:15px;
+  height:2px;
+  width:14px;
+  background: #fb637e;
+  transform: rotate(45deg);
+}
+
+.back-arrow:before{
+  content: '';
+  top: -6px;
+  left:-6px;
+  height:2px;
+  width:14px;
+  position: absolute;
+  background: #fb637e;
+  opacity: 1;
+  transform: rotate(-90deg);
+}
+
+.back-button{
+  top:210px;
+  left:115px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+  border-radius: 4px;
+  background-color: #d3d3d3;
+  cursor: pointer;
+}
+
+.drop-caret{
+position: relative;
+transform: rotate(-90deg)scale(0.8);
+display: inline-block;
+padding: 0px 18px;
+cursor: pointer;
+height: 16px;
+width: 18px;
+}
+
+
+.drop{
+  z-index: 1;
+  position: absolute;
+  /* top: 28px;
+  left:15px; */
+  height:2px;
+  width:14px;
+  background: #fb637e;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.drop:before{
+  content: '';
+  top: -6px;
+  left:-6px;
+  height:2px;
+  width:14px;
+  position: absolute;
+  background: #fb637e;
+  opacity: 1;
+  transform: rotate(-90deg);
+  cursor: pointer;
+}
+
+.info-button{
+  position: absolute;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  font-family: 'Gotham Book';
+  font-weight:900;
+  color: #fb637e;
+  font-size: 10px;
+  text-align: center;
+  border:1px solid #fb637e;
+}
+
+.loan-info-position{
+  margin-top: -17px;
+  right: 374px;
+}
+
+.t-period-info-position{
+  margin-top: -14px;
+    left: 193px;
+}
+
+.loan-info{
+  right:146px;
+}
+
+.tennure-info{
+  left: 225px;  
+}
+
+.caution{
+  
+  position: absolute;
+  width: 209px;
+  height: 50px;
+  opacity: 0.85;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.caution:before{
+content: '';
+position: absolute;
+height:8px;
+width:8px;
+background-color: #ffffff;
+top:6px;
+right:205px;
+transform: rotate(45deg);  
+box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.caution .para{
+  margin: auto;
+  font-family: "Gotham Book";
+  font-size: 11px;
+  color: #4a4a4a;
+  text-align: center;
+  font-weight: 600 !important;
+  margin: auto;
 }
