@@ -1,0 +1,26 @@
+{
+  "data": {
+    "user_posts": [
+      {
+        "user": "Vishal",
+        "title": "Latest Blogs",
+        "content": "What do we have here?"
+      },
+      {
+        "user": "Akash",
+        "title": "Latest Blogs 123",
+        "content": "Hello"
+      },
+      {
+        "user": "Default",
+        "title": "Generic",
+        "content": "template content"
+      },
+      {
+        "user": "Vishal",
+        "title": "Latest Blogs",
+        "content": "What do we have here?"
+      }
+    ]
+  }
+}
